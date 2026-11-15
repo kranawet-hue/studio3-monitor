@@ -1,0 +1,177 @@
+{
+  "version": 2,
+  "weeks": {
+    "2026-11-16": {
+      "known": {
+        "74654938": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654938",
+            "day": "2026-11-16",
+            "time": "09:00",
+            "title": "Einsteiger Functional",
+            "capacity": 10,
+            "used": 4,
+            "status": "bookable"
+          }
+        },
+        "74654939": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654939",
+            "day": "2026-11-16",
+            "time": "17:30",
+            "title": "Line Dance",
+            "capacity": 10,
+            "used": 4,
+            "status": "bookable"
+          }
+        },
+        "74654940": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654940",
+            "day": "2026-11-16",
+            "time": "19:00",
+            "title": "Functional Fitness",
+            "capacity": 10,
+            "used": 3,
+            "status": "bookable"
+          }
+        },
+        "74654941": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654941",
+            "day": "2026-11-17",
+            "time": "18:00",
+            "title": "Jumping Fitness",
+            "capacity": 11,
+            "used": 7,
+            "status": "bookable"
+          }
+        },
+        "74654942": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654942",
+            "day": "2026-11-17",
+            "time": "19:15",
+            "title": "TRX",
+            "capacity": 9,
+            "used": 8,
+            "status": "bookable"
+          }
+        },
+        "74654943": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654943",
+            "day": "2026-11-18",
+            "time": "18:00",
+            "title": "Functional Fitness",
+            "capacity": 10,
+            "used": 5,
+            "status": "bookable"
+          }
+        },
+        "74654944": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654944",
+            "day": "2026-11-19",
+            "time": "08:30",
+            "title": "Jumping Fitness",
+            "capacity": 11,
+            "used": 1,
+            "status": "bookable"
+          }
+        },
+        "74654945": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654945",
+            "day": "2026-11-19",
+            "time": "09:45",
+            "title": "TRX",
+            "capacity": 9,
+            "used": 2,
+            "status": "bookable"
+          }
+        },
+        "74654946": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654946",
+            "day": "2026-11-19",
+            "time": "18:00",
+            "title": "Jumping Fitness",
+            "capacity": 11,
+            "used": 7,
+            "status": "bookable"
+          }
+        },
+        "74654948": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654948",
+            "day": "2026-11-19",
+            "time": "19:15",
+            "title": "TRX",
+            "capacity": 9,
+            "used": 5,
+            "status": "bookable"
+          }
+        },
+        "74654952": {
+          "candidate": false,
+          "ever_full": false,
+          "streak": 0,
+          "confirmed_at": null,
+          "course": {
+            "slot_id": "74654952",
+            "day": "2026-11-20",
+            "time": "18:00",
+            "title": "🎄💫Weihnachtsfeier💫🎄",
+            "capacity": 30,
+            "used": 8,
+            "status": "bookable"
+          }
+        }
+      },
+      "notified": false
+    }
+  },
+  "events": {},
+  "last_success": "2026-11-15T16:42:07.783311+01:00"
+}
