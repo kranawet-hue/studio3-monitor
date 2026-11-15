@@ -1,0 +1,11 @@
+{
+  "view": "free",
+  "cursor": "2026-11-23T00:00:00.000Z",
+  "local": false,
+  "rp_id": 281170,
+  "app": [],
+  "total": 0,
+  "early": 0,
+  "header": null,
+  "html": "<div id=\"container\" class=\"inagenda\"><h2 class=\"cc3\">Verfügbarkeit für Studio 3 Kursplan ab 23.11.2026</h2><p style=\"margin:24px 14px\"><b>Kein verfügbarer Termin gefunden</b></p><form action=\"#\" style=\"padding:10px 0\"><span class=\"sup search rnd\"><label for=\"from\">Nächsten verfügbaren Zeitraum finden ab</label> <span id=\"fdate\"><input class=\"c\" id=\"from\" type=\"text\" onblur=\"hide_datepick()\" onfocus=\"show_datepick(this,0)\" value=\"23.11.2026   0:00\"></span> <button type=\"submit\" onclick=\"search_free();return false\" class=\"bttn\">Finden</button> <a href=\"javascript:void(0)\" class=\"ss\" onclick=\"search_free(1794756514)\">löschen</a></span></form><br></div>"
+}
