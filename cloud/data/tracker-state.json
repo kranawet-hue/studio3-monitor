@@ -170,8 +170,12 @@
         }
       },
       "notified": false
+    },
+    "2026-11-23": {
+      "known": {},
+      "notified": false
     }
   },
   "events": {},
-  "last_success": "2026-11-15T21:33:11.078462+01:00"
+  "last_success": "2026-11-16T01:21:39.848323+01:00"
 }
