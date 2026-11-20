@@ -64,6 +64,28 @@ def test_known_not_yet_open_can_be_released():
     _,event=step(state,[course()],30)
     assert event is not None
 
+@pytest.mark.parametrize('status',['unknown','closed'])
+def test_ambiguous_or_closed_slot_cannot_trigger_after_opening(status):
+    state,_=step(empty_state(),[])
+    state,_=step(state,[course(status=status)],15)
+    assert not state['weeks']['2026-11-16']['known']['1']['candidate']
+    stored = state['weeks']['2026-11-16']['known']['1']
+    stored['candidate']=True  # legacy persisted state
+    stored.pop('candidate_checked')
+    state,_=step(state,[course()],30)
+    _,event=step(state,[course()],45)
+    assert event is None
+
+def test_release_after_berlin_midnight_belongs_to_new_target_week():
+    sunday = NOW.replace(hour=23, minute=59)
+    state,_=step(empty_state(),[course()],now=sunday)
+    state,_=step(state,[],1,sunday)
+    next_course=course(day='2026-11-23')
+    state,event=step(state,[next_course],16,sunday)
+    assert event is None
+    _,event=step(state,[next_course],31,sunday)
+    assert event['id']=='release:2026-11-23'
+
 def test_rename_time_edit_removal_and_reappearance_are_not_new():
     state,_=step(empty_state(),[course()])
     state,_=step(state,[],10)
@@ -161,3 +183,13 @@ def test_feed_contains_only_studio3_week_and_aggregate_release():
     assert feed['source']==BASE and feed['week_start']=='2026-11-16'
     assert feed['events']==[event] and feed['available_count']==1
     assert 'participants' not in json.dumps(feed)
+
+def test_current_week_is_display_only_and_leaves_release_events_unchanged():
+    current = course(day='2026-11-13')
+    state = empty_state()
+    feed = build_feed(state, {}, NOW, {current.slot_id: current})
+    assert feed['week_start'] == '2026-11-16'
+    assert feed['courses'] == [] and feed['events'] == []
+    assert feed['current_week']['week_start'] == '2026-11-09'
+    assert feed['current_week']['courses'][0]['day'] == '2026-11-13'
+    assert state == empty_state()
