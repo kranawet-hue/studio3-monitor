@@ -171,7 +171,7 @@ async def capture(page, view, monday):
       early:typeof early_limit==='undefined'?null:early_limit,
       html:document.querySelector('#container').outerHTML})""")
 
-async def read_calendar(today):
+async def read_calendar(today, *, include_current=False):
     monday = next_monday(today)
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(headless=True, executable_path=os.getenv("CHROMIUM_EXECUTABLE") or None)
@@ -179,7 +179,13 @@ async def read_calendar(today):
         try:
             week = parse_week(await capture(page, "week", monday), monday)
             free = parse_free(await capture(page, "free", monday), monday)
-            return combine(week, free, today)
+            upcoming = combine(week, free, today)
+            if not include_current:
+                return upcoming
+            current_monday = monday - timedelta(days=7)
+            current = parse_week(await capture(page, "week", current_monday), current_monday)
+            # Past/current-week slots are for display only and never enter alert history.
+            return upcoming, current
         except Exception:
             Path("debug").mkdir(exist_ok=True)
             try:
@@ -227,14 +233,20 @@ def calculate_updates(state, courses, now):
     for key, c in courses.items():
         old = known.get(key)
         if old is None:
-            old = known[key] = {"candidate": not baseline or c.status == "not_open", "ever_full": False,
+            candidate = c.status == "not_open" or (not baseline and c.status == "bookable")
+            old = known[key] = {"candidate": candidate, "candidate_checked": True, "ever_full": False,
                 "streak": 0, "confirmed_at": None}
+        elif not old.get("candidate_checked"):
+            if old.get("course", {}).get("status") in {"unknown", "closed"}:
+                old["candidate"] = False
+            old["candidate_checked"] = True
         old["ever_full"] |= c.status == "full"
         if c.status == "bookable" and old["candidate"] and not old["ever_full"]:
-            if gap is None or gap > 90 * 60:
-                old["streak"] = 0
             since = (now - datetime.fromisoformat(old["confirmed_at"])).total_seconds() if old["confirmed_at"] else None
-            if since is None or since >= 60:
+            if since is None or since > 90 * 60:
+                old["streak"] = 1
+                old["confirmed_at"] = nowstr
+            elif since >= 60:
                 old["streak"] += 1
                 old["confirmed_at"] = nowstr
             eligible |= old["streak"] >= 2
@@ -255,12 +267,16 @@ def calculate_updates(state, courses, now):
     state["events"] = {k: v for k, v in state["events"].items() if v["week_start"] >= cutoff}
     return state, new
 
-def build_feed(state, courses, now):
+def build_feed(state, courses, now, current_courses=None):
     return {"version": 2, "status": "verified", "source": BASE,
         "verified_at": now.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
         "week_start": next_monday(now.astimezone(ZONE).date()).isoformat(),
         "available_count": sum(c.status == "bookable" for c in courses.values()),
         "courses": [asdict(c) for c in sorted(courses.values(), key=lambda c: (c.day, c.time, c.slot_id))],
+        "current_week": {
+            "week_start": (next_monday(now.astimezone(ZONE).date()) - timedelta(days=7)).isoformat(),
+            "courses": [asdict(c) for c in sorted((current_courses or {}).values(), key=lambda c: (c.day, c.time, c.slot_id))],
+        } if current_courses is not None else None,
         "events": sorted(state["events"].values(), key=lambda e: e["detected_at"])}
 
 def atomic_write(path, value):
@@ -276,16 +292,17 @@ async def main():
     now = datetime.now(ZONE)
     try:
         state = load_state()
-        courses = await read_calendar(now.date())
+        courses, current_courses = await read_calendar(now.date(), include_current=True)
         require(next_monday(datetime.now(ZONE).date()) == next_monday(now.date()), "Week changed while reading")
         updated, notice = calculate_updates(state, courses, now)
         print(json.dumps({"week_start": next_monday(now.date()).isoformat(), "slots": len(courses),
+            "current_week_slots": len(current_courses),
             "publicly_available": sum(c.status == "bookable" for c in courses.values()),
             "new_release": notice is not None, "dry_run": args.dry_run}, ensure_ascii=False))
         if not args.dry_run:
             # Persistent outbox first; CI publishes both files in one commit.
             atomic_write(STATE_PATH, updated)
-            atomic_write(PUBLIC_PATH, build_feed(updated, courses, now))
+            atomic_write(PUBLIC_PATH, build_feed(updated, courses, now, current_courses))
         return 0
     except Exception as exc:
         print(f"NOT VERIFIED: {exc}", file=sys.stderr)
