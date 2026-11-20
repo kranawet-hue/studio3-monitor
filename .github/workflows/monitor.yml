@@ -10,7 +10,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   monitor:
-    runs-on: ubuntu-latest
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-24.04
     timeout-minutes: 9
     defaults:
       run:
@@ -18,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Read the newest saved state after acquiring the concurrency slot.
+          ref: ${{ github.event.repository.default_branch }}
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
