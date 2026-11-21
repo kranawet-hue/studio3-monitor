@@ -178,14 +178,14 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756446",
             "day": "2026-11-23",
             "time": "09:00",
             "title": "Einsteiger Functional",
             "capacity": 10,
-            "used": 4,
+            "used": 6,
             "status": "bookable"
           }
         },
@@ -194,7 +194,7 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756447",
             "day": "2026-11-23",
@@ -210,14 +210,14 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756448",
             "day": "2026-11-23",
             "time": "19:00",
             "title": "Functional Fitness",
             "capacity": 10,
-            "used": 3,
+            "used": 5,
             "status": "bookable"
           }
         },
@@ -226,31 +226,31 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756449",
             "day": "2026-11-24",
             "time": "18:00",
             "title": "Jumping Fitness",
             "capacity": 11,
-            "used": 6,
+            "used": 7,
             "status": "bookable"
           }
         },
         "74756450": {
           "candidate": true,
           "candidate_checked": true,
-          "ever_full": false,
-          "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "ever_full": true,
+          "streak": 0,
+          "confirmed_at": null,
           "course": {
             "slot_id": "74756450",
             "day": "2026-11-24",
             "time": "19:15",
             "title": "TRX",
             "capacity": 9,
-            "used": 4,
-            "status": "bookable"
+            "used": 9,
+            "status": "full"
           }
         },
         "74756451": {
@@ -258,14 +258,14 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756451",
             "day": "2026-11-25",
             "time": "18:00",
             "title": "Functional Fitness",
             "capacity": 10,
-            "used": 4,
+            "used": 9,
             "status": "bookable"
           }
         },
@@ -274,7 +274,7 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756452",
             "day": "2026-11-26",
@@ -290,14 +290,14 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756453",
             "day": "2026-11-26",
             "time": "09:45",
             "title": "TRX",
             "capacity": 9,
-            "used": 2,
+            "used": 3,
             "status": "bookable"
           }
         },
@@ -306,7 +306,7 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756454",
             "day": "2026-11-26",
@@ -322,14 +322,14 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756455",
             "day": "2026-11-26",
             "time": "19:15",
             "title": "TRX",
             "capacity": 9,
-            "used": 0,
+            "used": 3,
             "status": "bookable"
           }
         },
@@ -338,12 +338,28 @@
           "candidate_checked": true,
           "ever_full": false,
           "streak": 1,
-          "confirmed_at": "2026-11-21T17:15:56.522546+01:00",
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
           "course": {
             "slot_id": "74756456",
             "day": "2026-11-27",
             "time": "16:30",
             "title": "Functional Fitness",
+            "capacity": 10,
+            "used": 6,
+            "status": "bookable"
+          }
+        },
+        "74760122": {
+          "candidate": true,
+          "candidate_checked": true,
+          "ever_full": false,
+          "streak": 1,
+          "confirmed_at": "2026-11-21T22:45:19.636202+01:00",
+          "course": {
+            "slot_id": "74760122",
+            "day": "2026-11-27",
+            "time": "15:45",
+            "title": "Pilates",
             "capacity": 10,
             "used": 3,
             "status": "bookable"
@@ -354,5 +370,5 @@
     }
   },
   "events": {},
-  "last_success": "2026-11-21T17:15:56.522546+01:00"
+  "last_success": "2026-11-21T22:45:19.636202+01:00"
 }

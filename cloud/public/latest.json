@@ -2,7 +2,7 @@
   "version": 2,
   "status": "verified",
   "source": "https://www.supersaas.de/schedule/Jumping_JAG/Studio_3_Kursplan",
-  "verified_at": "2026-11-21T16:15:56.522546Z",
+  "verified_at": "2026-11-21T21:45:19.636202Z",
   "week_start": "2026-11-23",
   "available_count": 11,
   "courses": [
@@ -12,7 +12,7 @@
       "time": "09:00",
       "title": "Einsteiger Functional",
       "capacity": 10,
-      "used": 4,
+      "used": 6,
       "status": "bookable"
     },
     {
@@ -30,7 +30,7 @@
       "time": "19:00",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 3,
+      "used": 5,
       "status": "bookable"
     },
     {
@@ -39,7 +39,7 @@
       "time": "18:00",
       "title": "Jumping Fitness",
       "capacity": 11,
-      "used": 6,
+      "used": 7,
       "status": "bookable"
     },
     {
@@ -48,8 +48,8 @@
       "time": "19:15",
       "title": "TRX",
       "capacity": 9,
-      "used": 4,
-      "status": "bookable"
+      "used": 9,
+      "status": "full"
     },
     {
       "slot_id": "74756451",
@@ -57,7 +57,7 @@
       "time": "18:00",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 4,
+      "used": 9,
       "status": "bookable"
     },
     {
@@ -75,7 +75,7 @@
       "time": "09:45",
       "title": "TRX",
       "capacity": 9,
-      "used": 2,
+      "used": 3,
       "status": "bookable"
     },
     {
@@ -93,7 +93,16 @@
       "time": "19:15",
       "title": "TRX",
       "capacity": 9,
-      "used": 0,
+      "used": 3,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74760122",
+      "day": "2026-11-27",
+      "time": "15:45",
+      "title": "Pilates",
+      "capacity": 10,
+      "used": 3,
       "status": "bookable"
     },
     {
@@ -102,7 +111,7 @@
       "time": "16:30",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 3,
+      "used": 6,
       "status": "bookable"
     }
   ],
