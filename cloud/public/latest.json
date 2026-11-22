@@ -2,7 +2,7 @@
   "version": 2,
   "status": "verified",
   "source": "https://www.supersaas.de/schedule/Jumping_JAG/Studio_3_Kursplan",
-  "verified_at": "2026-11-21T21:45:19.636202Z",
+  "verified_at": "2026-11-22T01:43:12.355269Z",
   "week_start": "2026-11-23",
   "available_count": 11,
   "courses": [
@@ -48,7 +48,7 @@
       "time": "19:15",
       "title": "TRX",
       "capacity": 9,
-      "used": 9,
+      "used": 10,
       "status": "full"
     },
     {
@@ -93,7 +93,7 @@
       "time": "19:15",
       "title": "TRX",
       "capacity": 9,
-      "used": 3,
+      "used": 4,
       "status": "bookable"
     },
     {
