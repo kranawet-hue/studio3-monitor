@@ -367,8 +367,12 @@
         }
       },
       "notified": false
+    },
+    "2026-11-30": {
+      "known": {},
+      "notified": false
     }
   },
   "events": {},
-  "last_success": "2026-11-22T23:27:36.518332+01:00"
+  "last_success": "2026-11-23T04:05:03.798793+01:00"
 }

@@ -2,206 +2,97 @@
   "version": 2,
   "status": "verified",
   "source": "https://www.supersaas.de/schedule/Jumping_JAG/Studio_3_Kursplan",
-  "verified_at": "2026-11-22T22:27:36.518332Z",
-  "week_start": "2026-11-23",
-  "available_count": 11,
-  "courses": [
-    {
-      "slot_id": "74756446",
-      "day": "2026-11-23",
-      "time": "09:00",
-      "title": "Einsteiger Functional",
-      "capacity": 10,
-      "used": 7,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756447",
-      "day": "2026-11-23",
-      "time": "17:30",
-      "title": "Line Dance",
-      "capacity": 10,
-      "used": 3,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756448",
-      "day": "2026-11-23",
-      "time": "19:00",
-      "title": "Functional Fitness",
-      "capacity": 10,
-      "used": 5,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756449",
-      "day": "2026-11-24",
-      "time": "18:00",
-      "title": "Jumping Fitness",
-      "capacity": 11,
-      "used": 9,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756450",
-      "day": "2026-11-24",
-      "time": "19:15",
-      "title": "TRX",
-      "capacity": 9,
-      "used": 13,
-      "status": "full"
-    },
-    {
-      "slot_id": "74756451",
-      "day": "2026-11-25",
-      "time": "18:00",
-      "title": "Functional Fitness",
-      "capacity": 10,
-      "used": 9,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756452",
-      "day": "2026-11-26",
-      "time": "08:30",
-      "title": "Jumping Fitness",
-      "capacity": 11,
-      "used": 4,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756453",
-      "day": "2026-11-26",
-      "time": "09:45",
-      "title": "TRX",
-      "capacity": 9,
-      "used": 3,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756454",
-      "day": "2026-11-26",
-      "time": "18:00",
-      "title": "Jumping Fitness",
-      "capacity": 11,
-      "used": 3,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756455",
-      "day": "2026-11-26",
-      "time": "19:15",
-      "title": "TRX",
-      "capacity": 9,
-      "used": 7,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74760122",
-      "day": "2026-11-27",
-      "time": "15:45",
-      "title": "Pilates",
-      "capacity": 10,
-      "used": 4,
-      "status": "bookable"
-    },
-    {
-      "slot_id": "74756456",
-      "day": "2026-11-27",
-      "time": "16:30",
-      "title": "Functional Fitness",
-      "capacity": 10,
-      "used": 6,
-      "status": "bookable"
-    }
-  ],
+  "verified_at": "2026-11-23T03:05:03.798793Z",
+  "week_start": "2026-11-30",
+  "available_count": 0,
+  "courses": [],
   "current_week": {
-    "week_start": "2026-11-16",
+    "week_start": "2026-11-23",
     "courses": [
       {
-        "slot_id": "74654938",
-        "day": "2026-11-16",
+        "slot_id": "74756446",
+        "day": "2026-11-23",
         "time": "09:00",
         "title": "Einsteiger Functional",
         "capacity": 10,
-        "used": 4,
+        "used": 7,
         "status": "unknown"
       },
       {
-        "slot_id": "74654939",
-        "day": "2026-11-16",
+        "slot_id": "74756447",
+        "day": "2026-11-23",
         "time": "17:30",
         "title": "Line Dance",
         "capacity": 10,
-        "used": 4,
+        "used": 3,
         "status": "unknown"
       },
       {
-        "slot_id": "74654940",
-        "day": "2026-11-16",
+        "slot_id": "74756448",
+        "day": "2026-11-23",
         "time": "19:00",
         "title": "Functional Fitness",
         "capacity": 10,
-        "used": 4,
+        "used": 5,
         "status": "unknown"
       },
       {
-        "slot_id": "74654941",
-        "day": "2026-11-17",
+        "slot_id": "74756449",
+        "day": "2026-11-24",
         "time": "18:00",
         "title": "Jumping Fitness",
         "capacity": 11,
-        "used": 6,
+        "used": 9,
         "status": "unknown"
       },
       {
-        "slot_id": "74654942",
-        "day": "2026-11-17",
+        "slot_id": "74756450",
+        "day": "2026-11-24",
         "time": "19:15",
         "title": "TRX",
         "capacity": 9,
-        "used": 10,
+        "used": 13,
         "status": "unknown"
       },
       {
-        "slot_id": "74654943",
-        "day": "2026-11-18",
+        "slot_id": "74756451",
+        "day": "2026-11-25",
         "time": "18:00",
         "title": "Functional Fitness",
         "capacity": 10,
-        "used": 7,
+        "used": 9,
         "status": "unknown"
       },
       {
-        "slot_id": "74654944",
-        "day": "2026-11-19",
+        "slot_id": "74756452",
+        "day": "2026-11-26",
         "time": "08:30",
         "title": "Jumping Fitness",
         "capacity": 11,
-        "used": 7,
-        "status": "unknown"
-      },
-      {
-        "slot_id": "74654945",
-        "day": "2026-11-19",
-        "time": "09:45",
-        "title": "TRX",
-        "capacity": 9,
         "used": 4,
         "status": "unknown"
       },
       {
-        "slot_id": "74654946",
-        "day": "2026-11-19",
-        "time": "18:00",
-        "title": "Jumping Fitness",
-        "capacity": 11,
-        "used": 7,
+        "slot_id": "74756453",
+        "day": "2026-11-26",
+        "time": "09:45",
+        "title": "TRX",
+        "capacity": 9,
+        "used": 3,
         "status": "unknown"
       },
       {
-        "slot_id": "74654948",
-        "day": "2026-11-19",
+        "slot_id": "74756454",
+        "day": "2026-11-26",
+        "time": "18:00",
+        "title": "Jumping Fitness",
+        "capacity": 11,
+        "used": 3,
+        "status": "unknown"
+      },
+      {
+        "slot_id": "74756455",
+        "day": "2026-11-26",
         "time": "19:15",
         "title": "TRX",
         "capacity": 9,
@@ -209,12 +100,21 @@
         "status": "unknown"
       },
       {
-        "slot_id": "74654952",
-        "day": "2026-11-20",
-        "time": "18:00",
-        "title": "🎄💫Weihnachtsfeier💫🎄",
-        "capacity": 30,
-        "used": 11,
+        "slot_id": "74760122",
+        "day": "2026-11-27",
+        "time": "15:45",
+        "title": "Pilates",
+        "capacity": 10,
+        "used": 4,
+        "status": "unknown"
+      },
+      {
+        "slot_id": "74756456",
+        "day": "2026-11-27",
+        "time": "16:30",
+        "title": "Functional Fitness",
+        "capacity": 10,
+        "used": 6,
         "status": "unknown"
       }
     ]
