@@ -374,15 +374,15 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859375",
             "day": "2026-11-30",
             "time": "09:00",
             "title": "Einsteiger Functional",
             "capacity": 10,
-            "used": 1,
+            "used": 2,
             "status": "bookable"
           }
         },
@@ -390,8 +390,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859376",
             "day": "2026-11-30",
@@ -406,8 +406,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859378",
             "day": "2026-11-30",
@@ -422,8 +422,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859380",
             "day": "2026-12-01",
@@ -438,8 +438,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859381",
             "day": "2026-12-01",
@@ -454,8 +454,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859383",
             "day": "2026-12-02",
@@ -470,8 +470,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859384",
             "day": "2026-12-03",
@@ -486,8 +486,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859385",
             "day": "2026-12-03",
@@ -502,8 +502,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859386",
             "day": "2026-12-03",
@@ -518,15 +518,15 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859387",
             "day": "2026-12-03",
             "time": "19:15",
             "title": "TRX",
             "capacity": 9,
-            "used": 1,
+            "used": 2,
             "status": "bookable"
           }
         },
@@ -534,8 +534,8 @@
           "candidate": true,
           "candidate_checked": true,
           "ever_full": false,
-          "streak": 5,
-          "confirmed_at": "2026-11-28T13:41:19.919636+01:00",
+          "streak": 6,
+          "confirmed_at": "2026-11-28T13:51:21.768779+01:00",
           "course": {
             "slot_id": "74859388",
             "day": "2026-12-04",
@@ -557,5 +557,5 @@
       "detected_at": "2026-11-28T12:11:18.085783Z"
     }
   },
-  "last_success": "2026-11-28T13:41:19.919636+01:00"
+  "last_success": "2026-11-28T13:51:21.768779+01:00"
 }
