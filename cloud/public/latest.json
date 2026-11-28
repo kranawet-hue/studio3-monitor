@@ -2,7 +2,7 @@
   "version": 2,
   "status": "verified",
   "source": "https://www.supersaas.de/schedule/Jumping_JAG/Studio_3_Kursplan",
-  "verified_at": "2026-11-28T12:21:03.716807Z",
+  "verified_at": "2026-11-28T12:31:14.636717Z",
   "week_start": "2026-11-30",
   "available_count": 11,
   "courses": [
@@ -30,7 +30,7 @@
       "time": "19:00",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 0,
+      "used": 1,
       "status": "bookable"
     },
     {
@@ -57,7 +57,7 @@
       "time": "18:00",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 0,
+      "used": 1,
       "status": "bookable"
     },
     {
@@ -102,7 +102,7 @@
       "time": "16:30",
       "title": "Functional Fitness",
       "capacity": 10,
-      "used": 0,
+      "used": 1,
       "status": "bookable"
     }
   ],
