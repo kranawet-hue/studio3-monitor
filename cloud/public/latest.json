@@ -2,10 +2,110 @@
   "version": 2,
   "status": "verified",
   "source": "https://www.supersaas.de/schedule/Jumping_JAG/Studio_3_Kursplan",
-  "verified_at": "2026-11-28T11:51:04.529339Z",
+  "verified_at": "2026-11-28T12:01:26.171332Z",
   "week_start": "2026-11-30",
-  "available_count": 0,
-  "courses": [],
+  "available_count": 11,
+  "courses": [
+    {
+      "slot_id": "74859375",
+      "day": "2026-11-30",
+      "time": "09:00",
+      "title": "Einsteiger Functional",
+      "capacity": 10,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859376",
+      "day": "2026-11-30",
+      "time": "17:30",
+      "title": "Line Dance",
+      "capacity": 10,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859378",
+      "day": "2026-11-30",
+      "time": "19:00",
+      "title": "Functional Fitness",
+      "capacity": 10,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859380",
+      "day": "2026-12-01",
+      "time": "18:00",
+      "title": "Jumping Fitness",
+      "capacity": 11,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859381",
+      "day": "2026-12-01",
+      "time": "19:15",
+      "title": "TRX",
+      "capacity": 9,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859383",
+      "day": "2026-12-02",
+      "time": "18:00",
+      "title": "Functional Fitness",
+      "capacity": 10,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859384",
+      "day": "2026-12-03",
+      "time": "08:30",
+      "title": "Jumping Fitness",
+      "capacity": 11,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859385",
+      "day": "2026-12-03",
+      "time": "09:45",
+      "title": "TRX",
+      "capacity": 9,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859386",
+      "day": "2026-12-03",
+      "time": "18:00",
+      "title": "Jumping Fitness",
+      "capacity": 11,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859387",
+      "day": "2026-12-03",
+      "time": "19:15",
+      "title": "TRX",
+      "capacity": 9,
+      "used": 0,
+      "status": "bookable"
+    },
+    {
+      "slot_id": "74859388",
+      "day": "2026-12-04",
+      "time": "16:30",
+      "title": "Functional Fitness",
+      "capacity": 10,
+      "used": 0,
+      "status": "bookable"
+    }
+  ],
   "current_week": {
     "week_start": "2026-11-23",
     "courses": [
